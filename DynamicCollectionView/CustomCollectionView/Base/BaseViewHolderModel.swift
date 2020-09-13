@@ -6,21 +6,18 @@
 //  Copyright © 2020 Tom Anderson. All rights reserved.
 //
 
-import Foundation
-
-import Foundation
 import UIKit
 
-protocol BaseViewHolderModelProtocol {
+
+@objc class BaseViewHolderModel: NSObject  {
     
-    func createViewHolder<T>(theCollectionView: UICollectionView, indexPath: IndexPath) -> BaseViewHolder<T>
+    func provideNibName() -> String {
+        return "STUB"
+    }
+    
+    func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
+        return theCollectionView.dequeueReusableCell(withReuseIdentifier: "STUB", for: indexPath)
+    }
     
 }
 
-
-class BaseViewHolderModelClass {
-    
-    
-}
-
-typealias BaseViewHolderModel = BaseViewHolderModelClass & BaseViewHolderModelProtocol

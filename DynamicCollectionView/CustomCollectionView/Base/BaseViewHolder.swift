@@ -11,8 +11,8 @@ import UIKit
 
 class BaseViewHolder<T: BaseViewHolderModel> : UICollectionViewCell {
     
-    func bindData(data: T) {
-        print(data)
-    }
+//    func bindData(data: T) {
+//        print(data)
+//    }
     
 }

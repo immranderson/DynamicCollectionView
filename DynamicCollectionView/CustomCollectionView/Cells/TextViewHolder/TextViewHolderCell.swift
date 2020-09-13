@@ -11,9 +11,7 @@ import UIKit
 class TextViewHolderCell: BaseViewHolder<TextViewHolderModel> {
 
     
-    
     @IBOutlet weak var someLabel: UILabel!
-    
     
     
     override func awakeFromNib() {
@@ -21,8 +19,10 @@ class TextViewHolderCell: BaseViewHolder<TextViewHolderModel> {
         // Initialization code
     }
     
-    override func bindData(data: TextViewHolderModel) {
-        someLabel.text = data.text
+    
+    override func bindData(data: BaseViewHolderModel) {
+        let textHolderModel = (data as! TextViewHolderModel)
+        someLabel.text = textHolderModel.text
     }
     
     func setLabelText(text: String) {

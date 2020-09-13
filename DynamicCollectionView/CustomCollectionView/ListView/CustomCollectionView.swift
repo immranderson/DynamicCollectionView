@@ -18,9 +18,7 @@ class CustomCollectionView: UIView, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var innerCollectionView: UICollectionView!
     
     var items: [Int] = Array(0...50)
-    var holderData: [BaseViewHolderModel] = (0...50).map { (number) -> BaseViewHolderModel in
-        TextViewHolderModel(text: "TextHolder: \(number)")
-    }
+    var holderData: [BaseViewHolderModel] = []
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -40,9 +38,12 @@ class CustomCollectionView: UIView, UICollectionViewDataSource, UICollectionView
         
         innerCollectionView.delegate = self
         innerCollectionView.dataSource = self
-
-        let textHolderCell = UINib(nibName: "TextViewHolderCell", bundle: nil)
-        innerCollectionView.register(textHolderCell, forCellWithReuseIdentifier: "TextViewHolderCell")
+//
+//        let textHolderCell = UINib(nibName: "TextViewHolderCell", bundle: nil)
+//        innerCollectionView.register(textHolderCell, forCellWithReuseIdentifier: "TextViewHolderCell")
+//        
+//        let numberHolderCell = UINib(nibName: "NumberViewHolderCell", bundle: nil)
+//        innerCollectionView.register(numberHolderCell, forCellWithReuseIdentifier: "NumberViewHolderCell")
         
     }
     
@@ -54,9 +55,9 @@ class CustomCollectionView: UIView, UICollectionViewDataSource, UICollectionView
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 80)
+        return CGSize(width: UIScreen.main.bounds.width, height: 200)
     }
-    
+
     
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return holderData.count
@@ -65,20 +66,24 @@ class CustomCollectionView: UIView, UICollectionViewDataSource, UICollectionView
     
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            
-        
-            
-            let textViewHolderCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TextViewHolderCell", for: indexPath) as! TextViewHolderCell
-        
-            
-            
-            textViewHolderCell.bindData(data: holderData[indexPath.item] as! TextViewHolderModel)
 
-            return textViewHolderCell
+            
+            let holderModel = holderData[indexPath.item]
+            
+            let someGenericCell = holderModel.createViewHolder(theCollectionView: collectionView, indexPath: indexPath)
+            someGenericCell.bindData(data: holderModel)
+
+            return someGenericCell
         }
         
         
         func pushHolderData(holderModels: [BaseViewHolderModel]) {
+            
+            holderModels.forEach { (baseViewHolderModel) in
+                let nibCellForRegistration = UINib(nibName: baseViewHolderModel.provideNibName(), bundle: nil)
+                innerCollectionView.register(nibCellForRegistration, forCellWithReuseIdentifier: baseViewHolderModel.provideNibName())
+            }
+            
             self.holderData = holderModels
             self.innerCollectionView.reloadData()
         }

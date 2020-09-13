@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374ECC6CFB75350207B5FAE9 /* Pods_DynamicCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B7F2841A769A6A36378454 /* Pods_DynamicCollectionView.framework */; };
+		5A528EB7250DAA6600107108 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EB6250DAA6600107108 /* UICollectionViewCell+Extensions.swift */; };
+		5A528EBF250DAD7600107108 /* NumberViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EBD250DAD7600107108 /* NumberViewHolderCell.swift */; };
+		5A528EC0250DAD7600107108 /* NumberViewHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A528EBE250DAD7600107108 /* NumberViewHolderCell.xib */; };
+		5A528EC2250DAD9600107108 /* NumberViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EC1250DAD9600107108 /* NumberViewHolderModel.swift */; };
+		5A528EC5250DB65100107108 /* ImageViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EC4250DB65100107108 /* ImageViewHolderModel.swift */; };
+		5A528EC8250DB6D400107108 /* ImageViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EC6250DB6D400107108 /* ImageViewHolderCell.swift */; };
+		5A528EC9250DB6D400107108 /* ImageViewHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A528EC7250DB6D400107108 /* ImageViewHolderCell.xib */; };
 		5A708F8F250D8A3700662A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708F8E250D8A3700662A88 /* AppDelegate.swift */; };
 		5A708F91250D8A3700662A88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708F90250D8A3700662A88 /* SceneDelegate.swift */; };
 		5A708F93250D8A3700662A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708F92250D8A3700662A88 /* ViewController.swift */; };
@@ -15,8 +23,6 @@
 		5A708F9B250D8A3800662A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A708F99250D8A3800662A88 /* LaunchScreen.storyboard */; };
 		5A708FA4250D8A9700662A88 /* CustomCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A708FA3250D8A9700662A88 /* CustomCollectionView.xib */; };
 		5A708FA6250D8ADB00662A88 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FA5250D8ADB00662A88 /* CustomCollectionView.swift */; };
-		5A708FAA250D8CE100662A88 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FA8250D8CE100662A88 /* MyCustomCell.swift */; };
-		5A708FAB250D8CE100662A88 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A708FA9250D8CE100662A88 /* MyCustomCell.xib */; };
 		5A708FAF250D906D00662A88 /* BaseViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */; };
 		5A708FB1250D908E00662A88 /* BaseViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FB0250D908E00662A88 /* BaseViewHolder.swift */; };
 		5A708FB5250D910400662A88 /* TextViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FB3250D910400662A88 /* TextViewHolderCell.swift */; };
@@ -25,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C959177028ACD3227FFC026 /* Pods-DynamicCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicCollectionView.debug.xcconfig"; path = "Target Support Files/Pods-DynamicCollectionView/Pods-DynamicCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		58D92D99D94A5AAFE35A993C /* Pods-DynamicCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicCollectionView.release.xcconfig"; path = "Target Support Files/Pods-DynamicCollectionView/Pods-DynamicCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		5A528EB6250DAA6600107108 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		5A528EBD250DAD7600107108 /* NumberViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewHolderCell.swift; sourceTree = "<group>"; };
+		5A528EBE250DAD7600107108 /* NumberViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberViewHolderCell.xib; sourceTree = "<group>"; };
+		5A528EC1250DAD9600107108 /* NumberViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewHolderModel.swift; sourceTree = "<group>"; };
+		5A528EC4250DB65100107108 /* ImageViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewHolderModel.swift; sourceTree = "<group>"; };
+		5A528EC6250DB6D400107108 /* ImageViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewHolderCell.swift; sourceTree = "<group>"; };
+		5A528EC7250DB6D400107108 /* ImageViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewHolderCell.xib; sourceTree = "<group>"; };
 		5A708F8B250D8A3700662A88 /* DynamicCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A708F8E250D8A3700662A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A708F90250D8A3700662A88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,13 +50,12 @@
 		5A708F9C250D8A3800662A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A708FA3250D8A9700662A88 /* CustomCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionView.xib; sourceTree = "<group>"; };
 		5A708FA5250D8ADB00662A88 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
-		5A708FA8250D8CE100662A88 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
-		5A708FA9250D8CE100662A88 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
 		5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHolderModel.swift; sourceTree = "<group>"; };
 		5A708FB0250D908E00662A88 /* BaseViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHolder.swift; sourceTree = "<group>"; };
 		5A708FB3250D910400662A88 /* TextViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewHolderCell.swift; sourceTree = "<group>"; };
 		5A708FB4250D910400662A88 /* TextViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewHolderCell.xib; sourceTree = "<group>"; };
 		5A708FB7250D911600662A88 /* TextViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewHolderModel.swift; sourceTree = "<group>"; };
+		E9B7F2841A769A6A36378454 /* Pods_DynamicCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +63,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374ECC6CFB75350207B5FAE9 /* Pods_DynamicCollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A528EB8250DAD3E00107108 /* NumberViewHolder */ = {
+			isa = PBXGroup;
+			children = (
+				5A528EBD250DAD7600107108 /* NumberViewHolderCell.swift */,
+				5A528EBE250DAD7600107108 /* NumberViewHolderCell.xib */,
+				5A528EC1250DAD9600107108 /* NumberViewHolderModel.swift */,
+			);
+			path = NumberViewHolder;
+			sourceTree = "<group>";
+		};
+		5A528EC3250DB63B00107108 /* ImageViewHolder */ = {
+			isa = PBXGroup;
+			children = (
+				5A528EC4250DB65100107108 /* ImageViewHolderModel.swift */,
+				5A528EC6250DB6D400107108 /* ImageViewHolderCell.swift */,
+				5A528EC7250DB6D400107108 /* ImageViewHolderCell.xib */,
+			);
+			path = ImageViewHolder;
+			sourceTree = "<group>";
+		};
 		5A708F82250D8A3700662A88 = {
 			isa = PBXGroup;
 			children = (
 				5A708F8D250D8A3700662A88 /* DynamicCollectionView */,
 				5A708F8C250D8A3700662A88 /* Products */,
+				744D9A9838A63354BB21BD31 /* Pods */,
+				9A2C64C06D8F5B50772121E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,24 +136,17 @@
 		5A708FA7250D8CB400662A88 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5A528EC3250DB63B00107108 /* ImageViewHolder */,
+				5A528EB8250DAD3E00107108 /* NumberViewHolder */,
 				5A708FB2250D90CA00662A88 /* TextViewHolder */,
-				5A708FAC250D903300662A88 /* MyCustomCell */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		5A708FAC250D903300662A88 /* MyCustomCell */ = {
-			isa = PBXGroup;
-			children = (
-				5A708FA8250D8CE100662A88 /* MyCustomCell.swift */,
-				5A708FA9250D8CE100662A88 /* MyCustomCell.xib */,
-			);
-			path = MyCustomCell;
 			sourceTree = "<group>";
 		};
 		5A708FAD250D905900662A88 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				5A528EB6250DAA6600107108 /* UICollectionViewCell+Extensions.swift */,
 				5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */,
 				5A708FB0250D908E00662A88 /* BaseViewHolder.swift */,
 			);
@@ -142,6 +172,24 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
+		744D9A9838A63354BB21BD31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C959177028ACD3227FFC026 /* Pods-DynamicCollectionView.debug.xcconfig */,
+				58D92D99D94A5AAFE35A993C /* Pods-DynamicCollectionView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A2C64C06D8F5B50772121E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9B7F2841A769A6A36378454 /* Pods_DynamicCollectionView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A708F9F250D8A3800662A88 /* Build configuration list for PBXNativeTarget "DynamicCollectionView" */;
 			buildPhases = (
+				C94B483B4504838AF43BF3A3 /* [CP] Check Pods Manifest.lock */,
 				5A708F87250D8A3700662A88 /* Sources */,
 				5A708F88250D8A3700662A88 /* Frameworks */,
 				5A708F89250D8A3700662A88 /* Resources */,
+				E1AD895284B31F5A65B04846 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,16 +250,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A528EC9250DB6D400107108 /* ImageViewHolderCell.xib in Resources */,
 				5A708F9B250D8A3800662A88 /* LaunchScreen.storyboard in Resources */,
 				5A708F98250D8A3800662A88 /* Assets.xcassets in Resources */,
 				5A708F96250D8A3700662A88 /* Main.storyboard in Resources */,
 				5A708FA4250D8A9700662A88 /* CustomCollectionView.xib in Resources */,
-				5A708FAB250D8CE100662A88 /* MyCustomCell.xib in Resources */,
+				5A528EC0250DAD7600107108 /* NumberViewHolderCell.xib in Resources */,
 				5A708FB6250D910400662A88 /* TextViewHolderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C94B483B4504838AF43BF3A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DynamicCollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1AD895284B31F5A65B04846 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DynamicCollectionView/Pods-DynamicCollectionView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DynamicCollectionView/Pods-DynamicCollectionView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DynamicCollectionView/Pods-DynamicCollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A708F87250D8A3700662A88 /* Sources */ = {
@@ -220,9 +313,13 @@
 				5A708FB5250D910400662A88 /* TextViewHolderCell.swift in Sources */,
 				5A708F93250D8A3700662A88 /* ViewController.swift in Sources */,
 				5A708FB8250D911600662A88 /* TextViewHolderModel.swift in Sources */,
+				5A528EC8250DB6D400107108 /* ImageViewHolderCell.swift in Sources */,
+				5A528EB7250DAA6600107108 /* UICollectionViewCell+Extensions.swift in Sources */,
 				5A708FAF250D906D00662A88 /* BaseViewHolderModel.swift in Sources */,
-				5A708FAA250D8CE100662A88 /* MyCustomCell.swift in Sources */,
 				5A708F8F250D8A3700662A88 /* AppDelegate.swift in Sources */,
+				5A528EBF250DAD7600107108 /* NumberViewHolderCell.swift in Sources */,
+				5A528EC5250DB65100107108 /* ImageViewHolderModel.swift in Sources */,
+				5A528EC2250DAD9600107108 /* NumberViewHolderModel.swift in Sources */,
 				5A708F91250D8A3700662A88 /* SceneDelegate.swift in Sources */,
 				5A708FA6250D8ADB00662A88 /* CustomCollectionView.swift in Sources */,
 			);
@@ -366,6 +463,7 @@
 		};
 		5A708FA0250D8A3800662A88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C959177028ACD3227FFC026 /* Pods-DynamicCollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +481,7 @@
 		};
 		5A708FA1250D8A3800662A88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D92D99D94A5AAFE35A993C /* Pods-DynamicCollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

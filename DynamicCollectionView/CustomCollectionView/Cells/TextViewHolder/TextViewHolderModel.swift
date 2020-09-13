@@ -10,20 +10,21 @@ import UIKit
 
 class TextViewHolderModel: BaseViewHolderModel {
     
-    func createViewHolder<T>(theCollectionView: UICollectionView, indexPath: IndexPath) -> BaseViewHolder<T> where T : BaseViewHolderModel, T : BaseViewHolderModelProtocol {
-        theCollectionView.dequeueReusableCell(withReuseIdentifier: "TextViewHolderCell", for: indexPath) as! BaseViewHolder<T>
-    }
-    
-    
+    let identifier = "TextViewHolderCell"
+
         let text: String
         
         init(text: String) {
             self.text = text
         }
         
-//        func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-//            theCollectionView.dequeueReusableCell(withReuseIdentifier: "TextViewHolderCell", for: indexPath) as! TextViewHolderCell
-//        }
+    override func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
+            theCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! TextViewHolderCell
+        }
+    
+    override func provideNibName() -> String {
+        identifier
+    }
 
     }
 
