@@ -10,9 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var customCollectionView: CustomCollectionView!
+    
+    let sampleModels: [BaseViewHolderModel] = [
+        TextViewHolderModel(text: "Hello"),
+        TextViewHolderModel(text: "World")
+    ]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        customCollectionView.pushHolderData(holderModels: sampleModels)
     }
 
 

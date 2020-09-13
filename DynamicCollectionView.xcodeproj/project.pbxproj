@@ -13,6 +13,15 @@
 		5A708F96250D8A3700662A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A708F94250D8A3700662A88 /* Main.storyboard */; };
 		5A708F98250D8A3800662A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A708F97250D8A3800662A88 /* Assets.xcassets */; };
 		5A708F9B250D8A3800662A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A708F99250D8A3800662A88 /* LaunchScreen.storyboard */; };
+		5A708FA4250D8A9700662A88 /* CustomCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A708FA3250D8A9700662A88 /* CustomCollectionView.xib */; };
+		5A708FA6250D8ADB00662A88 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FA5250D8ADB00662A88 /* CustomCollectionView.swift */; };
+		5A708FAA250D8CE100662A88 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FA8250D8CE100662A88 /* MyCustomCell.swift */; };
+		5A708FAB250D8CE100662A88 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A708FA9250D8CE100662A88 /* MyCustomCell.xib */; };
+		5A708FAF250D906D00662A88 /* BaseViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */; };
+		5A708FB1250D908E00662A88 /* BaseViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FB0250D908E00662A88 /* BaseViewHolder.swift */; };
+		5A708FB5250D910400662A88 /* TextViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FB3250D910400662A88 /* TextViewHolderCell.swift */; };
+		5A708FB6250D910400662A88 /* TextViewHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A708FB4250D910400662A88 /* TextViewHolderCell.xib */; };
+		5A708FB8250D911600662A88 /* TextViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FB7250D911600662A88 /* TextViewHolderModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		5A708F97250D8A3800662A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A708F9A250D8A3800662A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A708F9C250D8A3800662A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A708FA3250D8A9700662A88 /* CustomCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionView.xib; sourceTree = "<group>"; };
+		5A708FA5250D8ADB00662A88 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		5A708FA8250D8CE100662A88 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		5A708FA9250D8CE100662A88 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHolderModel.swift; sourceTree = "<group>"; };
+		5A708FB0250D908E00662A88 /* BaseViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHolder.swift; sourceTree = "<group>"; };
+		5A708FB3250D910400662A88 /* TextViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewHolderCell.swift; sourceTree = "<group>"; };
+		5A708FB4250D910400662A88 /* TextViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewHolderCell.xib; sourceTree = "<group>"; };
+		5A708FB7250D911600662A88 /* TextViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewHolderModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 		5A708F8D250D8A3700662A88 /* DynamicCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				5A708FA2250D8A5200662A88 /* CustomCollectionView */,
 				5A708F8E250D8A3700662A88 /* AppDelegate.swift */,
 				5A708F90250D8A3700662A88 /* SceneDelegate.swift */,
 				5A708F92250D8A3700662A88 /* ViewController.swift */,
@@ -65,6 +84,62 @@
 				5A708F9C250D8A3800662A88 /* Info.plist */,
 			);
 			path = DynamicCollectionView;
+			sourceTree = "<group>";
+		};
+		5A708FA2250D8A5200662A88 /* CustomCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5A708FAD250D905900662A88 /* Base */,
+				5A90C726250D954B005D3442 /* ListView */,
+				5A708FA7250D8CB400662A88 /* Cells */,
+			);
+			path = CustomCollectionView;
+			sourceTree = "<group>";
+		};
+		5A708FA7250D8CB400662A88 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5A708FB2250D90CA00662A88 /* TextViewHolder */,
+				5A708FAC250D903300662A88 /* MyCustomCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5A708FAC250D903300662A88 /* MyCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				5A708FA8250D8CE100662A88 /* MyCustomCell.swift */,
+				5A708FA9250D8CE100662A88 /* MyCustomCell.xib */,
+			);
+			path = MyCustomCell;
+			sourceTree = "<group>";
+		};
+		5A708FAD250D905900662A88 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */,
+				5A708FB0250D908E00662A88 /* BaseViewHolder.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A708FB2250D90CA00662A88 /* TextViewHolder */ = {
+			isa = PBXGroup;
+			children = (
+				5A708FB3250D910400662A88 /* TextViewHolderCell.swift */,
+				5A708FB4250D910400662A88 /* TextViewHolderCell.xib */,
+				5A708FB7250D911600662A88 /* TextViewHolderModel.swift */,
+			);
+			path = TextViewHolder;
+			sourceTree = "<group>";
+		};
+		5A90C726250D954B005D3442 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				5A708FA3250D8A9700662A88 /* CustomCollectionView.xib */,
+				5A708FA5250D8ADB00662A88 /* CustomCollectionView.swift */,
+			);
+			path = ListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +203,9 @@
 				5A708F9B250D8A3800662A88 /* LaunchScreen.storyboard in Resources */,
 				5A708F98250D8A3800662A88 /* Assets.xcassets in Resources */,
 				5A708F96250D8A3700662A88 /* Main.storyboard in Resources */,
+				5A708FA4250D8A9700662A88 /* CustomCollectionView.xib in Resources */,
+				5A708FAB250D8CE100662A88 /* MyCustomCell.xib in Resources */,
+				5A708FB6250D910400662A88 /* TextViewHolderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A708FB1250D908E00662A88 /* BaseViewHolder.swift in Sources */,
+				5A708FB5250D910400662A88 /* TextViewHolderCell.swift in Sources */,
 				5A708F93250D8A3700662A88 /* ViewController.swift in Sources */,
+				5A708FB8250D911600662A88 /* TextViewHolderModel.swift in Sources */,
+				5A708FAF250D906D00662A88 /* BaseViewHolderModel.swift in Sources */,
+				5A708FAA250D8CE100662A88 /* MyCustomCell.swift in Sources */,
 				5A708F8F250D8A3700662A88 /* AppDelegate.swift in Sources */,
 				5A708F91250D8A3700662A88 /* SceneDelegate.swift in Sources */,
+				5A708FA6250D8ADB00662A88 /* CustomCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
