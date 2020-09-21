@@ -1,23 +1,15 @@
 //
-//  BaseViewHolderModel.swift
+//  BaseCellModel.swift
 //  DynamicCollectionView
 //
-//  Created by Tom Anderson on 9/12/20.
+//  Created by Tom Anderson on 9/13/20.
 //  Copyright © 2020 Tom Anderson. All rights reserved.
 //
 
 import UIKit
 
-
-@objc class BaseViewHolderModel: NSObject  {
-    
-    func provideNibName() -> String {
-        return "STUB"
-    }
-    
-    func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-        return theCollectionView.dequeueReusableCell(withReuseIdentifier: "STUB", for: indexPath)
-    }
-    
+protocol BaseViewHolderModel {
+    func provideNibName() -> String
+    func provideCellSize() -> CGSize
+    func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell
 }
-

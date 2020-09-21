@@ -8,28 +8,29 @@
 
 import UIKit
 
-class ImageViewHolderModel: BaseViewHolderModel {
-    
-    let identifier = "ImageViewHolderCell"
+struct ImageViewHolderModel: BaseViewHolderModel {
     
     let imageURL: String
     let labelText: String
     
-    init(imageURL: String, labelText: String) {
-        self.imageURL = imageURL
-        self.labelText = labelText
-    }
-    
-    override func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let imageViewHolderCell = theCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! ImageViewHolderCell
-        
-        
-        return imageViewHolderCell
-    }
-    
-    override func provideNibName() -> String {
+    func provideNibName() -> String {
         identifier
     }
+    
+    func provideCellSize() -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: 100)
+    }
+    
+    func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
+                let imageViewHolderCell = theCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! ImageViewHolderCell
+        
+        
+                return imageViewHolderCell
+    }
+    
+
+    
+    let identifier = "ImageViewHolderCell"
+
     
 }

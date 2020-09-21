@@ -10,59 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var sampleModels: [BaseViewHolderModel] = [
-        TextViewHolderModel(text: "Hello"),
+    @IBOutlet weak var ryansCustomView: MyCustomView!
+    
+    @IBOutlet weak var dynamicCollectionView: DynamicCollectionView!
+    
+    var viewControllerStateModels: [BaseViewHolderModel] = [
+        RyanViewHolderModel(startText: "Starting with Ryan"),
         TextViewHolderModel(text: "World"),
-        NumberViewHolderModel(number: 5)
+        NumberViewHolderModel(number: 1234),
+        TextViewHolderModel(text: "Ryan"),
+        TextViewHolderModel(text: "Ryan"),
+        TextViewHolderModel(text: "Ryan"),
+        TextViewHolderModel(text: "Ryan"),
+        TextViewHolderModel(text: "Ryan"),
+        TextViewHolderModel(text: "Ryan"),
+        TextViewHolderModel(text: "Ryan"),
+        NumberViewHolderModel(number: 1234)
     ]
 
-    @IBOutlet weak var customCollectionView: CustomCollectionView!
-    
-    @IBAction func addNumberClicked(_ sender: Any) {
-        
-        let newNumberViewHolderModel = NumberViewHolderModel(number: sampleModels.count)
-        
-        sampleModels.append(newNumberViewHolderModel)
-        updateCollectionView()
-        
-    }
-    
-    @IBAction func addTextClicked(_ sender: Any) {
-        let newTextViewHolderModel = TextViewHolderModel(text: "New Text: \(sampleModels.count)")
-        
-        sampleModels.append(newTextViewHolderModel)
-        updateCollectionView()
-    }
-    
-    @IBAction func addImageClicked(_ sender: Any) {
-        
-        let imageNumber = sampleModels.count
-        let randomImageUrl = "https://picsum.photos/id/\(imageNumber)/200/300"
-        
-        let newImageViewHolderModel = ImageViewHolderModel(imageURL: randomImageUrl, labelText: "IMAGE NUMBER: \(imageNumber)")
-        
-        sampleModels.append(newImageViewHolderModel)
-        updateCollectionView()
-    }
-    
-    
-    @IBAction func resetClicked(_ sender: Any) {
-        sampleModels = []
-        updateCollectionView()
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        updateCollectionView()
+        ryansCustomView.setData(leftLabel: "LEFT", rightLabel: "RIGHT")
+        dynamicCollectionView.pushImmutableList(holderModels: viewControllerStateModels)
     }
-    
-    func updateCollectionView() {
-        customCollectionView.pushHolderData(holderModels: sampleModels)
-    }
-
 
 }
 

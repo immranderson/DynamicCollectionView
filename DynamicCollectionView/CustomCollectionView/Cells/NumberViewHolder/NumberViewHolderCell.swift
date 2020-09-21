@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NumberViewHolderCell: BaseViewHolder<NumberViewHolderModel> {
+class NumberViewHolderCell: UICollectionViewCell, BaseViewHolder {
 
     @IBOutlet weak var numberLabel: UILabel!
     
@@ -17,10 +17,11 @@ class NumberViewHolderCell: BaseViewHolder<NumberViewHolderModel> {
         // Initialization code
     }
     
-    override func bindData(data: BaseViewHolderModel) {
-        let numberHolderModel = (data as! NumberViewHolderModel)
+    func bindData(data: BaseViewHolderModel) {
+                let numberHolderModel = (data as! NumberViewHolderModel)
         
-        numberLabel.text = "NUMBER: \(numberHolderModel.number)"
+                numberLabel.text = "NUMBER: \(numberHolderModel.number)"
     }
+
 
 }

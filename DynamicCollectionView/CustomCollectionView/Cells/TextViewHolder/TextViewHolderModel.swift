@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextViewHolderModel: BaseViewHolderModel {
+struct TextViewHolderModel: BaseViewHolderModel {
     
     let identifier = "TextViewHolderCell"
 
@@ -18,13 +18,17 @@ class TextViewHolderModel: BaseViewHolderModel {
             self.text = text
         }
         
-    override func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
+    func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
             theCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! TextViewHolderCell
         }
     
-    override func provideNibName() -> String {
+    func provideNibName() -> String {
         identifier
     }
-
+    
+    func provideCellSize() -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: 100)
     }
+
+}
 

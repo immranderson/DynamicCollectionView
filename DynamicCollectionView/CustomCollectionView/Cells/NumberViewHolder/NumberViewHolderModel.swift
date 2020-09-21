@@ -8,22 +8,24 @@
 
 import UIKit
 
-class NumberViewHolderModel: BaseViewHolderModel {
+struct NumberViewHolderModel: BaseViewHolderModel {
+    
     
     let identifier = "NumberViewHolderCell"
     
     let number: Int
     
-    init(number: Int) {
-        self.number = number
-    }
 
-    override func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
+    func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
             theCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! NumberViewHolderCell
         }
     
-    override func provideNibName() -> String {
+    func provideNibName() -> String {
         identifier
+    }
+    
+    func provideCellSize() -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: 100)
     }
 
     

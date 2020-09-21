@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		374ECC6CFB75350207B5FAE9 /* Pods_DynamicCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B7F2841A769A6A36378454 /* Pods_DynamicCollectionView.framework */; };
-		5A528EB7250DAA6600107108 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EB6250DAA6600107108 /* UICollectionViewCell+Extensions.swift */; };
 		5A528EBF250DAD7600107108 /* NumberViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EBD250DAD7600107108 /* NumberViewHolderCell.swift */; };
 		5A528EC0250DAD7600107108 /* NumberViewHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A528EBE250DAD7600107108 /* NumberViewHolderCell.xib */; };
 		5A528EC2250DAD9600107108 /* NumberViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EC1250DAD9600107108 /* NumberViewHolderModel.swift */; };
@@ -21,19 +20,23 @@
 		5A708F96250D8A3700662A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A708F94250D8A3700662A88 /* Main.storyboard */; };
 		5A708F98250D8A3800662A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A708F97250D8A3800662A88 /* Assets.xcassets */; };
 		5A708F9B250D8A3800662A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A708F99250D8A3800662A88 /* LaunchScreen.storyboard */; };
-		5A708FA4250D8A9700662A88 /* CustomCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A708FA3250D8A9700662A88 /* CustomCollectionView.xib */; };
-		5A708FA6250D8ADB00662A88 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FA5250D8ADB00662A88 /* CustomCollectionView.swift */; };
-		5A708FAF250D906D00662A88 /* BaseViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */; };
-		5A708FB1250D908E00662A88 /* BaseViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FB0250D908E00662A88 /* BaseViewHolder.swift */; };
+		5A708FA4250D8A9700662A88 /* DynamicCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A708FA3250D8A9700662A88 /* DynamicCollectionView.xib */; };
+		5A708FA6250D8ADB00662A88 /* DynamicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FA5250D8ADB00662A88 /* DynamicCollectionView.swift */; };
 		5A708FB5250D910400662A88 /* TextViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FB3250D910400662A88 /* TextViewHolderCell.swift */; };
 		5A708FB6250D910400662A88 /* TextViewHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A708FB4250D910400662A88 /* TextViewHolderCell.xib */; };
 		5A708FB8250D911600662A88 /* TextViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708FB7250D911600662A88 /* TextViewHolderModel.swift */; };
+		5A92D2C0250F120700685CA7 /* BaseViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92D2BF250F120700685CA7 /* BaseViewHolderModel.swift */; };
+		5A92D2C2250F121800685CA7 /* BaseViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92D2C1250F121800685CA7 /* BaseViewHolder.swift */; };
+		5A92D2CD251000B900685CA7 /* RyanViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92D2CB251000B900685CA7 /* RyanViewHolderCell.swift */; };
+		5A92D2CE251000B900685CA7 /* RyanViewHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A92D2CC251000B900685CA7 /* RyanViewHolderCell.xib */; };
+		5A92D2D02510018B00685CA7 /* RyanViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92D2CF2510018B00685CA7 /* RyanViewHolderModel.swift */; };
+		5A92D2D32510049800685CA7 /* MyCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A92D2D22510049800685CA7 /* MyCustomView.xib */; };
+		5A92D2D5251004A600685CA7 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92D2D4251004A600685CA7 /* MyCustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C959177028ACD3227FFC026 /* Pods-DynamicCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicCollectionView.debug.xcconfig"; path = "Target Support Files/Pods-DynamicCollectionView/Pods-DynamicCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		58D92D99D94A5AAFE35A993C /* Pods-DynamicCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicCollectionView.release.xcconfig"; path = "Target Support Files/Pods-DynamicCollectionView/Pods-DynamicCollectionView.release.xcconfig"; sourceTree = "<group>"; };
-		5A528EB6250DAA6600107108 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		5A528EBD250DAD7600107108 /* NumberViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewHolderCell.swift; sourceTree = "<group>"; };
 		5A528EBE250DAD7600107108 /* NumberViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberViewHolderCell.xib; sourceTree = "<group>"; };
 		5A528EC1250DAD9600107108 /* NumberViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewHolderModel.swift; sourceTree = "<group>"; };
@@ -48,13 +51,18 @@
 		5A708F97250D8A3800662A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A708F9A250D8A3800662A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A708F9C250D8A3800662A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A708FA3250D8A9700662A88 /* CustomCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionView.xib; sourceTree = "<group>"; };
-		5A708FA5250D8ADB00662A88 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
-		5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHolderModel.swift; sourceTree = "<group>"; };
-		5A708FB0250D908E00662A88 /* BaseViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHolder.swift; sourceTree = "<group>"; };
+		5A708FA3250D8A9700662A88 /* DynamicCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicCollectionView.xib; sourceTree = "<group>"; };
+		5A708FA5250D8ADB00662A88 /* DynamicCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionView.swift; sourceTree = "<group>"; };
 		5A708FB3250D910400662A88 /* TextViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewHolderCell.swift; sourceTree = "<group>"; };
 		5A708FB4250D910400662A88 /* TextViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewHolderCell.xib; sourceTree = "<group>"; };
 		5A708FB7250D911600662A88 /* TextViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewHolderModel.swift; sourceTree = "<group>"; };
+		5A92D2BF250F120700685CA7 /* BaseViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHolderModel.swift; sourceTree = "<group>"; };
+		5A92D2C1250F121800685CA7 /* BaseViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHolder.swift; sourceTree = "<group>"; };
+		5A92D2CB251000B900685CA7 /* RyanViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyanViewHolderCell.swift; sourceTree = "<group>"; };
+		5A92D2CC251000B900685CA7 /* RyanViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RyanViewHolderCell.xib; sourceTree = "<group>"; };
+		5A92D2CF2510018B00685CA7 /* RyanViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyanViewHolderModel.swift; sourceTree = "<group>"; };
+		5A92D2D22510049800685CA7 /* MyCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomView.xib; sourceTree = "<group>"; };
+		5A92D2D4251004A600685CA7 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		E9B7F2841A769A6A36378454 /* Pods_DynamicCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +119,7 @@
 		5A708F8D250D8A3700662A88 /* DynamicCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				5A92D2D12510047600685CA7 /* CustomViews */,
 				5A708FA2250D8A5200662A88 /* CustomCollectionView */,
 				5A708F8E250D8A3700662A88 /* AppDelegate.swift */,
 				5A708F90250D8A3700662A88 /* SceneDelegate.swift */,
@@ -136,6 +145,7 @@
 		5A708FA7250D8CB400662A88 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5A92D2CA2510009400685CA7 /* RyanViewHolder */,
 				5A528EC3250DB63B00107108 /* ImageViewHolder */,
 				5A528EB8250DAD3E00107108 /* NumberViewHolder */,
 				5A708FB2250D90CA00662A88 /* TextViewHolder */,
@@ -146,9 +156,8 @@
 		5A708FAD250D905900662A88 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				5A528EB6250DAA6600107108 /* UICollectionViewCell+Extensions.swift */,
-				5A708FAE250D906D00662A88 /* BaseViewHolderModel.swift */,
-				5A708FB0250D908E00662A88 /* BaseViewHolder.swift */,
+				5A92D2BF250F120700685CA7 /* BaseViewHolderModel.swift */,
+				5A92D2C1250F121800685CA7 /* BaseViewHolder.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -166,10 +175,29 @@
 		5A90C726250D954B005D3442 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				5A708FA3250D8A9700662A88 /* CustomCollectionView.xib */,
-				5A708FA5250D8ADB00662A88 /* CustomCollectionView.swift */,
+				5A708FA3250D8A9700662A88 /* DynamicCollectionView.xib */,
+				5A708FA5250D8ADB00662A88 /* DynamicCollectionView.swift */,
 			);
 			path = ListView;
+			sourceTree = "<group>";
+		};
+		5A92D2CA2510009400685CA7 /* RyanViewHolder */ = {
+			isa = PBXGroup;
+			children = (
+				5A92D2CB251000B900685CA7 /* RyanViewHolderCell.swift */,
+				5A92D2CC251000B900685CA7 /* RyanViewHolderCell.xib */,
+				5A92D2CF2510018B00685CA7 /* RyanViewHolderModel.swift */,
+			);
+			path = RyanViewHolder;
+			sourceTree = "<group>";
+		};
+		5A92D2D12510047600685CA7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				5A92D2D22510049800685CA7 /* MyCustomView.xib */,
+				5A92D2D4251004A600685CA7 /* MyCustomView.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		744D9A9838A63354BB21BD31 /* Pods */ = {
@@ -178,7 +206,6 @@
 				4C959177028ACD3227FFC026 /* Pods-DynamicCollectionView.debug.xcconfig */,
 				58D92D99D94A5AAFE35A993C /* Pods-DynamicCollectionView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -252,9 +279,11 @@
 			files = (
 				5A528EC9250DB6D400107108 /* ImageViewHolderCell.xib in Resources */,
 				5A708F9B250D8A3800662A88 /* LaunchScreen.storyboard in Resources */,
+				5A92D2CE251000B900685CA7 /* RyanViewHolderCell.xib in Resources */,
 				5A708F98250D8A3800662A88 /* Assets.xcassets in Resources */,
 				5A708F96250D8A3700662A88 /* Main.storyboard in Resources */,
-				5A708FA4250D8A9700662A88 /* CustomCollectionView.xib in Resources */,
+				5A92D2D32510049800685CA7 /* MyCustomView.xib in Resources */,
+				5A708FA4250D8A9700662A88 /* DynamicCollectionView.xib in Resources */,
 				5A528EC0250DAD7600107108 /* NumberViewHolderCell.xib in Resources */,
 				5A708FB6250D910400662A88 /* TextViewHolderCell.xib in Resources */,
 			);
@@ -309,19 +338,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A708FB1250D908E00662A88 /* BaseViewHolder.swift in Sources */,
 				5A708FB5250D910400662A88 /* TextViewHolderCell.swift in Sources */,
 				5A708F93250D8A3700662A88 /* ViewController.swift in Sources */,
 				5A708FB8250D911600662A88 /* TextViewHolderModel.swift in Sources */,
 				5A528EC8250DB6D400107108 /* ImageViewHolderCell.swift in Sources */,
-				5A528EB7250DAA6600107108 /* UICollectionViewCell+Extensions.swift in Sources */,
-				5A708FAF250D906D00662A88 /* BaseViewHolderModel.swift in Sources */,
 				5A708F8F250D8A3700662A88 /* AppDelegate.swift in Sources */,
 				5A528EBF250DAD7600107108 /* NumberViewHolderCell.swift in Sources */,
 				5A528EC5250DB65100107108 /* ImageViewHolderModel.swift in Sources */,
+				5A92D2D5251004A600685CA7 /* MyCustomView.swift in Sources */,
 				5A528EC2250DAD9600107108 /* NumberViewHolderModel.swift in Sources */,
+				5A92D2CD251000B900685CA7 /* RyanViewHolderCell.swift in Sources */,
 				5A708F91250D8A3700662A88 /* SceneDelegate.swift in Sources */,
-				5A708FA6250D8ADB00662A88 /* CustomCollectionView.swift in Sources */,
+				5A92D2C0250F120700685CA7 /* BaseViewHolderModel.swift in Sources */,
+				5A92D2C2250F121800685CA7 /* BaseViewHolder.swift in Sources */,
+				5A92D2D02510018B00685CA7 /* RyanViewHolderModel.swift in Sources */,
+				5A708FA6250D8ADB00662A88 /* DynamicCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

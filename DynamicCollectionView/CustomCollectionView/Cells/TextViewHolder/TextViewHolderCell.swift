@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextViewHolderCell: BaseViewHolder<TextViewHolderModel> {
+class TextViewHolderCell: UICollectionViewCell, BaseViewHolder {
 
     
     @IBOutlet weak var someLabel: UILabel!
@@ -20,7 +20,7 @@ class TextViewHolderCell: BaseViewHolder<TextViewHolderModel> {
     }
     
     
-    override func bindData(data: BaseViewHolderModel) {
+    func bindData(data: BaseViewHolderModel) {
         let textHolderModel = (data as! TextViewHolderModel)
         someLabel.text = textHolderModel.text
     }

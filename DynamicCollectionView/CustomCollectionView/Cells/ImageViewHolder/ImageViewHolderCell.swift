@@ -10,26 +10,52 @@ import UIKit
 import Kingfisher
 
 
-class ImageViewHolderCell: BaseViewHolder<ImageViewHolderModel> {
+class ImageViewHolderCell: UICollectionViewCell, BaseViewHolder {
+    func bindData(data: BaseViewHolderModel) {
+        
+                let imageViewHolderModel = (data as! ImageViewHolderModel)
+        
+                someImageLabel.text = imageViewHolderModel.labelText
+        
+                let imageUrl = URL(string: imageViewHolderModel.imageURL)
+                let resizeProcessor = ResizingImageProcessor(referenceSize: CGSize(width: UIScreen.main.bounds.width, height: 200))
+        //        let processor = CroppingImageProcessor(size: CGSize(width: UIScreen.main.bounds.width, height: 200), anchor: CGPoint(x: 0.5, y: 0.5))
+        
+                someImageView.kf.setImage(
+                    with: imageUrl,
+                    options: [
+                    .processor(resizeProcessor)
+                    ]
+                )
+        
+    }
+    
 
     @IBOutlet weak var someImageView: UIImageView!
     @IBOutlet weak var someImageLabel: UILabel!
-    
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
-    override func bindData(data: BaseViewHolderModel) {
-        let imageViewHolderModel = (data as! ImageViewHolderModel)
-        
-        someImageLabel.text = imageViewHolderModel.labelText
-        
-        let imageUrl = URL(string: imageViewHolderModel.imageURL)
-        someImageView.kf.setImage(with: imageUrl)
-        
-    }
+//
+//    override func bindData(data: BaseViewHolderModel) {
+//        let imageViewHolderModel = (data as! ImageViewHolderModel)
+//
+//        someImageLabel.text = imageViewHolderModel.labelText
+//
+//        let imageUrl = URL(string: imageViewHolderModel.imageURL)
+//        let resizeProcessor = ResizingImageProcessor(referenceSize: CGSize(width: UIScreen.main.bounds.width, height: 200))
+////        let processor = CroppingImageProcessor(size: CGSize(width: UIScreen.main.bounds.width, height: 200), anchor: CGPoint(x: 0.5, y: 0.5))
+//
+//        someImageView.kf.setImage(
+//            with: imageUrl,
+//            options: [
+//            .processor(resizeProcessor)
+//            ]
+//        )
+//
+//    }
 
 }
