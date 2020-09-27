@@ -10,18 +10,14 @@ import UIKit
 
 struct NumberViewHolderModel: BaseViewHolderModel {
     
-    
-    let identifier = "NumberViewHolderCell"
-    
     let number: Int
     
-
     func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-            theCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! NumberViewHolderCell
+            theCollectionView.dequeueReusableCell(withReuseIdentifier: provideNibName(), for: indexPath) as! NumberViewHolderCell
         }
     
     func provideNibName() -> String {
-        identifier
+        "NumberViewHolderCell"
     }
     
     func provideCellSize() -> CGSize {

@@ -10,20 +10,14 @@ import UIKit
 
 struct TextViewHolderModel: BaseViewHolderModel {
     
-    let identifier = "TextViewHolderCell"
-
-        let text: String
-        
-        init(text: String) {
-            self.text = text
-        }
+    let text: String
         
     func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-            theCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! TextViewHolderCell
+            theCollectionView.dequeueReusableCell(withReuseIdentifier: provideNibName(), for: indexPath) as! TextViewHolderCell
         }
     
     func provideNibName() -> String {
-        identifier
+        "TextViewHolderCell"
     }
     
     func provideCellSize() -> CGSize {
