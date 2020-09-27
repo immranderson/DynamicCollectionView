@@ -14,6 +14,10 @@
 		5A528EC5250DB65100107108 /* ImageViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EC4250DB65100107108 /* ImageViewHolderModel.swift */; };
 		5A528EC8250DB6D400107108 /* ImageViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A528EC6250DB6D400107108 /* ImageViewHolderCell.swift */; };
 		5A528EC9250DB6D400107108 /* ImageViewHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A528EC7250DB6D400107108 /* ImageViewHolderCell.xib */; };
+		5A6C430825212D76001C3E5A /* StockDisplayViewHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C430625212D76001C3E5A /* StockDisplayViewHolderCell.swift */; };
+		5A6C430925212D76001C3E5A /* StockDisplayViewHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6C430725212D76001C3E5A /* StockDisplayViewHolderCell.xib */; };
+		5A6C430C25212EBE001C3E5A /* StockDisplayViewHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C430B25212EBE001C3E5A /* StockDisplayViewHolderModel.swift */; };
+		5A6C4310252131ED001C3E5A /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C430F252131ED001C3E5A /* UIButton+Extensions.swift */; };
 		5A708F8F250D8A3700662A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708F8E250D8A3700662A88 /* AppDelegate.swift */; };
 		5A708F91250D8A3700662A88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708F90250D8A3700662A88 /* SceneDelegate.swift */; };
 		5A708F93250D8A3700662A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A708F92250D8A3700662A88 /* ViewController.swift */; };
@@ -43,6 +47,10 @@
 		5A528EC4250DB65100107108 /* ImageViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewHolderModel.swift; sourceTree = "<group>"; };
 		5A528EC6250DB6D400107108 /* ImageViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewHolderCell.swift; sourceTree = "<group>"; };
 		5A528EC7250DB6D400107108 /* ImageViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewHolderCell.xib; sourceTree = "<group>"; };
+		5A6C430625212D76001C3E5A /* StockDisplayViewHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDisplayViewHolderCell.swift; sourceTree = "<group>"; };
+		5A6C430725212D76001C3E5A /* StockDisplayViewHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockDisplayViewHolderCell.xib; sourceTree = "<group>"; };
+		5A6C430B25212EBE001C3E5A /* StockDisplayViewHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDisplayViewHolderModel.swift; sourceTree = "<group>"; };
+		5A6C430F252131ED001C3E5A /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		5A708F8B250D8A3700662A88 /* DynamicCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A708F8E250D8A3700662A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A708F90250D8A3700662A88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +106,24 @@
 			path = ImageViewHolder;
 			sourceTree = "<group>";
 		};
+		5A6C430525212D02001C3E5A /* StockDisplayViewHolder */ = {
+			isa = PBXGroup;
+			children = (
+				5A6C430625212D76001C3E5A /* StockDisplayViewHolderCell.swift */,
+				5A6C430725212D76001C3E5A /* StockDisplayViewHolderCell.xib */,
+				5A6C430B25212EBE001C3E5A /* StockDisplayViewHolderModel.swift */,
+			);
+			path = StockDisplayViewHolder;
+			sourceTree = "<group>";
+		};
+		5A6C430E252131D9001C3E5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A6C430F252131ED001C3E5A /* UIButton+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5A708F82250D8A3700662A88 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +145,7 @@
 		5A708F8D250D8A3700662A88 /* DynamicCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				5A6C430E252131D9001C3E5A /* Extensions */,
 				5A92D2D12510047600685CA7 /* CustomViews */,
 				5A708FA2250D8A5200662A88 /* CustomCollectionView */,
 				5A708F8E250D8A3700662A88 /* AppDelegate.swift */,
@@ -145,6 +172,7 @@
 		5A708FA7250D8CB400662A88 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5A6C430525212D02001C3E5A /* StockDisplayViewHolder */,
 				5A92D2CA2510009400685CA7 /* RyanViewHolder */,
 				5A528EC3250DB63B00107108 /* ImageViewHolder */,
 				5A528EB8250DAD3E00107108 /* NumberViewHolder */,
@@ -283,6 +311,7 @@
 				5A708F98250D8A3800662A88 /* Assets.xcassets in Resources */,
 				5A708F96250D8A3700662A88 /* Main.storyboard in Resources */,
 				5A92D2D32510049800685CA7 /* MyCustomView.xib in Resources */,
+				5A6C430925212D76001C3E5A /* StockDisplayViewHolderCell.xib in Resources */,
 				5A708FA4250D8A9700662A88 /* DynamicCollectionView.xib in Resources */,
 				5A528EC0250DAD7600107108 /* NumberViewHolderCell.xib in Resources */,
 				5A708FB6250D910400662A88 /* TextViewHolderCell.xib in Resources */,
@@ -346,10 +375,13 @@
 				5A528EBF250DAD7600107108 /* NumberViewHolderCell.swift in Sources */,
 				5A528EC5250DB65100107108 /* ImageViewHolderModel.swift in Sources */,
 				5A92D2D5251004A600685CA7 /* MyCustomView.swift in Sources */,
+				5A6C430C25212EBE001C3E5A /* StockDisplayViewHolderModel.swift in Sources */,
 				5A528EC2250DAD9600107108 /* NumberViewHolderModel.swift in Sources */,
 				5A92D2CD251000B900685CA7 /* RyanViewHolderCell.swift in Sources */,
 				5A708F91250D8A3700662A88 /* SceneDelegate.swift in Sources */,
 				5A92D2C0250F120700685CA7 /* BaseViewHolderModel.swift in Sources */,
+				5A6C4310252131ED001C3E5A /* UIButton+Extensions.swift in Sources */,
+				5A6C430825212D76001C3E5A /* StockDisplayViewHolderCell.swift in Sources */,
 				5A92D2C2250F121800685CA7 /* BaseViewHolder.swift in Sources */,
 				5A92D2D02510018B00685CA7 /* RyanViewHolderModel.swift in Sources */,
 				5A708FA6250D8ADB00662A88 /* DynamicCollectionView.swift in Sources */,
