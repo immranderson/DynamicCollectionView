@@ -10,6 +10,7 @@ import UIKit
 
 struct RyanViewHolderModel : BaseViewHolderModel {
     
+    
     func provideNibName() -> String {
         "RyanViewHolderCell"
     }

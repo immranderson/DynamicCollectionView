@@ -14,7 +14,7 @@ struct ImageViewHolderModel: BaseViewHolderModel {
     let labelText: String
     
     func provideNibName() -> String {
-        identifier
+        "ImageViewHolderCell"
     }
     
     func provideCellSize() -> CGSize {
@@ -22,15 +22,8 @@ struct ImageViewHolderModel: BaseViewHolderModel {
     }
     
     func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-                let imageViewHolderCell = theCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! ImageViewHolderCell
-        
-        
+                let imageViewHolderCell = theCollectionView.dequeueReusableCell(withReuseIdentifier: provideNibName(), for: indexPath) as! ImageViewHolderCell
                 return imageViewHolderCell
     }
-    
-
-    
-    let identifier = "ImageViewHolderCell"
-
     
 }
