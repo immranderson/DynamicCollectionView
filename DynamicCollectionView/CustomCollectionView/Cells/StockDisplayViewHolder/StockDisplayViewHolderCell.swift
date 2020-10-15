@@ -10,20 +10,21 @@ import UIKit
 
 class StockDisplayViewHolderCell: UICollectionViewCell, BaseViewHolder {
     
-    var stockDisplayModel: StockDisplayViewHolderModel? = nil
+    private var actionListener: ((String) -> Void)?
     
     @IBOutlet weak var stockNameTextLabel: UILabel!
     @IBOutlet weak var stockPriceTextLabel: UILabel!
-
-    @IBOutlet weak var myTradeButton: UIButton!
+    
+    
     
     @IBAction func myTradeButtonClicked(_ sender: Any) {
-        self.stockDisplayModel?.tradeButtonClicked(
-            self.stockDisplayModel?.stockNameText,
-            self.stockDisplayModel?.stockPriceText
-            )
-        
+        actionListener?("TRADE")
     }
+    
+    @IBAction func deleteButtonClicked(_ sender: Any) {
+        actionListener?("DELETE")
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,10 +34,35 @@ class StockDisplayViewHolderCell: UICollectionViewCell, BaseViewHolder {
     
     func bindData(data: BaseViewHolderModel) {
         
-        self.stockDisplayModel = data as! StockDisplayViewHolderModel
+        let stockDisplayModel = data as! StockDisplayViewHolderModel
         
-        stockNameTextLabel.text = self.stockDisplayModel?.stockNameText
-        stockPriceTextLabel.text = self.stockDisplayModel?.stockPriceText
+        actionListener = { (event) in
+            
+            switch event {
+            
+            case "TRADE":
+                
+                stockDisplayModel.tradeButtonClicked(
+                    stockDisplayModel.stockNameText,
+                    stockDisplayModel.stockPriceText
+                )
+                
+                break
+                
+            case "DELETE":
+                stockDisplayModel.deleteButtonClicked()
+               break
+                
+            default:
+                //NO-OP
+               break
+            }
+            
+
+        }
+        
+        stockNameTextLabel.text = stockDisplayModel.stockNameText
+        stockPriceTextLabel.text = stockDisplayModel.stockPriceText
         
     }
     

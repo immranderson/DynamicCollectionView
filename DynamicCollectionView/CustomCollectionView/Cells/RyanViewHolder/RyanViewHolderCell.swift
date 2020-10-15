@@ -9,6 +9,8 @@
 import UIKit
 
 class RyanViewHolderCell: UICollectionViewCell, BaseViewHolder {
+    
+    var actionListener: ((Any) -> Void)?
 
     @IBOutlet weak var ryanTextField: UITextField!
     

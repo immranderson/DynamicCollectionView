@@ -15,8 +15,6 @@ struct StockDisplayViewHolderModel : BaseViewHolderModel {
     
     let stockNameText: String
     let stockPriceText: String
-    
-    
     let tradeButtonClicked: (StockTickerName, StockPrice) -> Void
     let deleteButtonClicked: () -> Void
     
@@ -32,7 +30,5 @@ struct StockDisplayViewHolderModel : BaseViewHolderModel {
     func createViewHolder(theCollectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
         theCollectionView.dequeueReusableCell(withReuseIdentifier: provideNibName(), for: indexPath)
     }
-    
-    
     
 }

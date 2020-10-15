@@ -9,6 +9,8 @@
 import UIKit
 
 class TextViewHolderCell: UICollectionViewCell, BaseViewHolder {
+    
+    var actionListener: ((Any) -> Void)?
 
     
     @IBOutlet weak var someLabel: UILabel!

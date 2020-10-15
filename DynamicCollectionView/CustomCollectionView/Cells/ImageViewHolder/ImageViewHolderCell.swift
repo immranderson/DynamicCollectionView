@@ -11,6 +11,11 @@ import Kingfisher
 
 
 class ImageViewHolderCell: UICollectionViewCell, BaseViewHolder {
+    
+    
+    
+    var actionListener: ((Any) -> Void)?
+    
     func bindData(data: BaseViewHolderModel) {
         
                 let imageViewHolderModel = (data as! ImageViewHolderModel)

@@ -31,8 +31,16 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3B3-bo-u3D">
+                        <rect key="frame" x="311" y="72" width="45" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Delete"/>
+                        <connections>
+                            <action selector="deleteButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="r2r-2N-ZdQ"/>
+                        </connections>
+                    </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOc-eM-Yqu">
-                        <rect key="frame" x="313" y="46" width="40" height="30"/>
+                        <rect key="frame" x="316" y="20" width="40" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Trade"/>
                         <connections>
@@ -44,7 +52,6 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="376" height="122"/>
             <connections>
-                <outlet property="myTradeButton" destination="zOc-eM-Yqu" id="B94-WN-UG3"/>
                 <outlet property="stockNameTextLabel" destination="9A9-sb-pOU" id="qHl-Mz-vlG"/>
                 <outlet property="stockPriceTextLabel" destination="fB8-By-U8D" id="Id1-mv-yiV"/>
             </connections>

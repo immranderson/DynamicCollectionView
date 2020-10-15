@@ -9,7 +9,9 @@
 import UIKit
 
 class NumberViewHolderCell: UICollectionViewCell, BaseViewHolder {
-
+    
+    var actionListener: ((Any) -> Void)?
+    
     @IBOutlet weak var numberLabel: UILabel!
     
     override func awakeFromNib() {

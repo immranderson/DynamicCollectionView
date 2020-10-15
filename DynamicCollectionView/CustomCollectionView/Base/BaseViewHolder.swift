@@ -9,5 +9,7 @@
 import UIKit
 
 protocol BaseViewHolder: UICollectionViewCell {
+    
     func bindData(data: BaseViewHolderModel)
+    
 }
